@@ -42,6 +42,7 @@
 #include "JsiSkTypeface.h"
 #include "JsiSkTypefaceFactory.h"
 #include "JsiSkVertices.h"
+#include "JsiSkSkottieAnimation.h"
 
 namespace RNSkia {
 
@@ -72,6 +73,7 @@ public:
     installFunction("PictureRecorder",
                     JsiSkPictureRecorder::createCtor(context));
     installFunction("Color", JsiSkColor::createCtor());
+    installFunction("SkottieAnimation", JsiSkSkottieAnimation::createCtor(context));
 
     installReadonlyProperty("SVG", std::make_shared<JsiSkSVGFactory>(context));
     installReadonlyProperty("Image",

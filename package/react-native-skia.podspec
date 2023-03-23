@@ -38,6 +38,8 @@ Pod::Spec.new do |s|
     'libs/ios/libskia.xcframework', 
     'libs/ios/libsvg.xcframework', 
     'libs/ios/libskshaper.xcframework',
+    'libs/ios/libskottie.xcframework',
+    'libs/ios/libsksg.xcframework'
     #'libs/ios/libskparagraph.xcframework',
     #'libs/ios/libskunicode.xcframework',
   ]
