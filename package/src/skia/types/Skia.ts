@@ -27,6 +27,7 @@ import type { SkPath } from "./Path/Path";
 import type { SkContourMeasureIter } from "./ContourMeasure";
 import type { PictureFactory, SkPictureRecorder } from "./Picture";
 import type { Color, SkColor } from "./Color";
+import type { SkSkottieAnimation } from "./SkottieAnimation";
 
 /**
  * Declares the interface for the native Skia API
@@ -45,6 +46,7 @@ export interface Skia {
   ) => SkContourMeasureIter;
   Paint: () => SkPaint;
   PictureRecorder: () => SkPictureRecorder;
+  SkottieAnimation: (jsonString: string) => SkSkottieAnimation;
   Picture: PictureFactory;
   Path: PathFactory;
   Matrix: (matrix?: readonly number[]) => SkMatrix;
